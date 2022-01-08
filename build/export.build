@@ -1,0 +1,6 @@
+$out_root/
+{
+  include xxhash/
+}
+
+export $out_root/xxhash/$import.target

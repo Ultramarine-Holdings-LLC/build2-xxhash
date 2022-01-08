@@ -1,0 +1,10 @@
+: 1
+name: xxhash
+version: 0.8.1-a.0.z
+summary: Extremely fast non-cryptographic hash algorithm
+license: BSD-2-Clause
+description-file: upstream/README.md
+url: https://cyan4973.github.io/xxHash/
+src-url: https://github.com/Cyan4973/xxHash
+depends: * build2 >= 0.14.0
+depends: * bpkg >= 0.14.0
