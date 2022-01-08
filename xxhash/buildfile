@@ -3,8 +3,11 @@ lib{xxhash}: {h c}{xxhash}
 lib{xxhash}: c.export.poptions = "-I$src_base"
 c.poptions += "-I$src_base"
 
-{hbmis objs}{*}: c.poptions += "-DXXH_EXPORT=1"
-libs{xxhash}: c.export.poptions += "-DXXH_IMPORT=1"
+if ($c.target.class == 'windows')
+{
+    {hbmis objs}{*}: c.poptions += "-DXXH_PUBLIC_API=__declspec(dllexport)"
+    libs{xxhash}: c.export.poptions += "-DXXH_PUBLIC_API=__declspec(dllimport)"
+}
 
 h{*}:
 {
