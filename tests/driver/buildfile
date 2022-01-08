@@ -1,0 +1,3 @@
+import libs = xxhash%lib{xxhash}
+
+exe{driver}: c{*} $libs
