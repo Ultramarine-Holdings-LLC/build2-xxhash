@@ -1,7 +1,7 @@
 lib{xxhash}: {h c}{xxhash}
 
 {hbmis objs}{*}: c.poptions += "-DXXH_EXPORT=1"
-libs{uv}: c.export.poptions += "-DXXH_IMPORT=1"
+libs{xxhash}: c.export.poptions += "-DXXH_IMPORT=1"
 
 c.poptions += "-I$src_base"
 
