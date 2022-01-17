@@ -1,0 +1,5 @@
+: 1
+name: xxhash
+version: 0.8.1
+summary: Extremely fast non-cryptographic hash algorithm
+license: BSD-2-Clause
